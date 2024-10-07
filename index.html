@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendation App</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <h1>Welcome to the Product Recommendation App</h1>
+        <p>Discover personalized product recommendations based on your preferences. Enter a product name and explore a curated list of recommendations tailored just for you.</p>
+        <p>How to use:</p>
+        <ol>
+            <li>Enter a product name in the field below.</li>
+            <li>Click the "Get Recommendations" button to see personalized product suggestions.</li>
+            <li>Explore and find products that match your interests!</li>
+        </ol>
+        <form action="/recommend" method="post">
+            <label for="product_name">Enter Product Name:</label>
+            <input type="text" name="product_name" required>
+            <button type="submit" class="recommendation-button">Get Recommendations</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+/* static/css/styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #4caf50;
+    background-color: #fff; /* Adjust background color */
+    padding: 10px 20px; /* Adjust padding */
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #45a049;
+    color: #fff;
+}
+
+p.no-recommendations {
+    text-align: center;
+    color: #888;
+}
+
+/* Added styles for input and recommendation button */
+input[type="text"] {
+    padding: 8px;
+    width: 300px;
+}
+
+button.recommendation-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.recommendation-button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Recommendations</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+    <style>
+        /* Add this style for the recommendation button */
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Product Recommendations for '{{ product_name }}'</h2>
+
+        {% if recommendations.empty %}
+            <p>No recommendations found for the specified product.</p>
+        {% else %}
+            <ul>
+                {% for index, row in recommendations.iterrows() %}
+                    <li>
+                        <strong>{{ row['product_name'] }}</strong>
+                        <p>{{ row['about_product'] }}</p>
+                        <p>Rating: {{ row['rating'] }}</p>
+                        <!-- Add more details as needed -->
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        
+
+        <button onclick="location.href='/'">Go back to homepage</button>
+    </div>
+</body>
+
+</html>
